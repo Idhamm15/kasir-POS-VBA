@@ -29,6 +29,7 @@ Auth::routes();
 Route::middleware(['auth','user-role:USER|ADMIN',])->group(function()
 {
     Route::get('/dashboard', [DashboardController::class, 'index']);
+    Route::get('/profile', [DashboardController::class, 'profile']);
     Route::get('/category', [CategoryController::class, 'index']);
     Route::get('/product', [ProductController::class, 'index']);
     Route::get('/order', [OrderController::class, 'index']);
