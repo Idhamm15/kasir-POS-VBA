@@ -53,4 +53,63 @@
     </div>
     </div>
 </div>
+
+
+    <!-- Modal Tambah Data -->
+    <div class="modal fade" id="product" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Transaction</h5>
+                <button style="border: none; width: 30px; height: 30px;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <span aria-hidden="true">&times;</span> --}}
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {{-- @csrf --}}
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Waktu</label>
+                        <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Metode Pembayaran</label>
+                        <select class="form-control form-select" id="size" name="size">
+                            <option value="-" selected>Category A</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Standar">Standar</option>
+                            <option value="KECIL">KECIL</option>
+                            <option value="BESAR">BESAR</option>
+                            <!-- Tambahkan lebih banyak opsi jika diperlukan -->
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description2" class="form-label">Quantity</label>
+                        <input type="number" class="form-control" id="description2" name="description2"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="description3" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="description3" name="description3"></input>
+                    </div>
+                    <div class="mb-3">
+                        <label for="size" class="form-label">Is Active</label>
+                        <select class="form-control form-select" id="size" name="size">
+                            <option value="-" selected>Active</option>
+                            <option value="Premium">Premium</option>
+                            <option value="Standar">Standar</option>
+                            <option value="KECIL">KECIL</option>
+                            <option value="BESAR">BESAR</option>
+                            <!-- Tambahkan lebih banyak opsi jika diperlukan -->
+                        </select>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Tambah Data</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    </div>
 @endsection

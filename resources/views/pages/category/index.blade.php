@@ -6,7 +6,7 @@
     <div class="card w-100">
         <div class="card-body p-4">
         <h5 class="card-title fw-semibold mb-4">Category</h5>
-        <a href="#" class="btn btn-primary" data-bs-target="#artikel1" data-bs-toggle="modal">New Category</a><br><br><br>
+        <a href="#" class="btn btn-primary" data-bs-target="#category" data-bs-toggle="modal">New Category</a><br><br><br>
         <div class="table-responsive">
             <table class="table text-nowrap mb-0 align-middle">
             <thead class="text-dark fs-4">
@@ -41,4 +41,33 @@
     </div>
     </div>
 </div>
+
+
+    <!-- Modal Tambah Data -->
+    <div class="modal fade" id="category" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">New Category</h5>
+                <button style="border: none; width: 30px; height: 30px;" type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                    {{-- <span aria-hidden="true">&times;</span> --}}
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="POST" enctype="multipart/form-data">
+                    {{-- @csrf --}}
+                    <div class="mb-3">
+                    <label for="na  me" class="form-label">Name Category</label>
+                    <input type="text" class="form-control" id="name" name="name">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-primary">Tambah Data</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    </div>
 @endsection
