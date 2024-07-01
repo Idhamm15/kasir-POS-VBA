@@ -57,24 +57,8 @@
                 <form action="" method="POST" enctype="multipart/form-data">
                     {{-- @csrf --}}
                     <div class="mb-3">
-                    <label for="image" class="form-label">Gambar</label>
-                    <input type="file" placeholder="Gambar" class="form-control" id="image"  name="image" aria-describedby="imageHelp">
-                    </div>
-                    <div class="mb-3">
-                    <label for="name" class="form-label">Nama Artikel</label>
-                    <input type="text" class="form-control" id="name" name="name">
-                    </div>
-                    <div class="mb-3">
-                        <label for="description" class="form-label">Deskripsi</label>
-                        <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="description2" class="form-label">Deskripsi 2</label>
-                        <textarea class="form-control" id="description2" name="description2" rows="3"></textarea>
-                    </div>
-                    <div class="mb-3">
-                        <label for="description3" class="form-label">Deskripsi 3</label>
-                        <textarea class="form-control" id="description3" name="description3" rows="3"></textarea>
+                        <label for="name" class="form-label">Name Payment</label>
+                        <input type="text" class="form-control" id="name" name="name">
                     </div>
                     <div class="modal-footer">
                         <button type="submit" class="btn btn-primary">Tambah Data</button>
